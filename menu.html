@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta itemprop="description" name="description" content="">
+    <meta itemprop="keywords" name="keywords" content="">
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/css/fancybox.css">
     <link rel="stylesheet" href="libs/css/swiper-bundle.css">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="libs/css/air-datepicker.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
-    <title>Главная</title>
+    <title itemprop="headline">Главная</title>
 </head>
 
 
@@ -28,53 +28,53 @@
         <div class="menu">
             <nav class="nav">
                 <div class="m-container">
-                    <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="" class="nav__link _active">
-                            <span>Главная  </span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>банный клуб</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>Услуги</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>Мероприятия</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>Меню кухни</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>Подарочные сертификаты</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>Акции </span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>Фотогалерея</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <span>Контакты</span>
-                        </a>
-                    </li>
-                </ul>
+                    <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav__list">
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link _active">
+                                <span>Главная  </span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>банный клуб</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>Услуги</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>Мероприятия</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>Меню кухни</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>Подарочные сертификаты</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>Акции </span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>Фотогалерея</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" itemprop="url" class="nav__link">
+                                <span>Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 
@@ -119,11 +119,20 @@
         <main class="content">
 
             <section class="breadcrumbs">
-                <div class="m-container">
-                    <a href="" class="breadcrumbs__item">Главная</a>
-                    <span class="breadcrumbs__item">Меню кухни</span>
-                </div>
-            </section>
+    <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="m-container">
+        <li class="breadcrumbs__item">
+            <a href="">
+                <span itemprop="name">Главная</span>
+            </a>
+        </li>
+        <li class="breadcrumbs__item">
+            <a>
+                <span itemprop="name">Меню кухни</span>
+            </a>
+        </li>
+    </ul>
+</section>
+
 
             <section class="menu-page">
                 <div class="m-container">
@@ -187,9 +196,9 @@
                         </a>
                     </div>
 
-                    <div class="search">
+                    <form class="search" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
                         <fieldset class="search__field fg">
-                            <input type="text" placeholder="Поиск">
+                            <input itemprop="query-input"  type="text" placeholder="Поиск">
                             <button class="search__btn">
                                 <img src="img/search.svg" alt="">
                             </button>
@@ -209,437 +218,487 @@
                                 </a>
                             </div>
                         </fieldset>
-                    </div>
+                    </form>
 
-                    <div class="products">
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product.webp" alt="">
+                    <ul itemscope itemtype="http://schema.org/ItemList" class="products">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Шаверма на тарелке
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Шаверма на тарелке
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product2.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product2.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Свинина с картофелем и грибами под сырным соусом
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Свинина с картофелем и грибами под сырным соусом
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Шаверма на тарелке
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Шаверма на тарелке
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product2.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product2.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Свинина с картофелем и грибами под сырным соусом
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Свинина с картофелем и грибами под сырным соусом
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Шаверма на тарелке
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Шаверма на тарелке
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product2.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product2.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Свинина с картофелем и грибами под сырным соусом
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Свинина с картофелем и грибами под сырным соусом
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Шаверма на тарелке
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Шаверма на тарелке
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product2.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product2.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Свинина с картофелем и грибами под сырным соусом
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Свинина с картофелем и грибами под сырным соусом
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Шаверма на тарелке
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Шаверма на тарелке
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product2.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product2.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Свинина с картофелем и грибами под сырным соусом
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Свинина с картофелем и грибами под сырным соусом
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Шаверма на тарелке
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Шаверма на тарелке
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                        <div class="product-card">
-    <a href="" class="product-card__img">
-        <img src="img/product2.webp" alt="">
+                        <li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product-card">
+    <a itemprop="url" href="" class="product-card__img">
+        <img itemprop="image" src="img/product2.webp" alt="">
     </a>
     <div class="product-card__content">
-        <a href="" class="product-card__title text16 bold-text">
-            Свинина с картофелем и грибами под сырным соусом
+        <a itemprop="url" href="" class="product-card__title text16 bold-text">
+            <span itemprop="name">
+                Свинина с картофелем и грибами под сырным соусом
+            </span>
         </a>
         <div class="product-card__weight text16">
             450 гр.
         </div>
-        <div class="product-card__price text22 bold-text">
+        <div itemprop="price" class="product-card__price text22 bold-text">
             600 ₽
+            <meta itemprop="priceCurrency" content="RUB">
         </div>
     </div>
     <div class="product-card__nav">
         <div class='cartcalc fg'>
-            <button class='ccalc-minus'>
-                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="16" height="2" fill="black"/>
-                </svg>
-            </button>
-            <input type='text' value='1'>
-            <button class='ccalc-plus'>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
-                </svg>
-            </button>
-        </div>
+    <button class='ccalc-minus'>
+        <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="2" fill="black"/>
+        </svg>
+    </button>
+    <input type='text' value='1'>
+    <button class='ccalc-plus'>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 0H7V7H0V9H7V16H9V9H16V7H9V0Z" fill="black"/>
+        </svg>
+    </button>
+</div>
+
         <button class="product-card__btn m-btn m-btn-primary">
             <span>заказать</span>
         </button>
     </div>
-</div>
+</li>
 
-                    </div>
+                    </ul>
                 </div>
             </section>
 
         </main>
-        <footer class="footer">
+        <footer itemscope itemtype="http://schema.org/WPFooter" class="footer">
             <div class="m-container">
     <div class="footer__inner">
+        <meta itemprop="copyrightYear" content="2032">
+        <meta itemprop="copyrightHolder" content="Банный клуб «Пархаус»">
         <div class="footer__c text16">© Банный клуб «Пархаус», 2023</div>
         <a href="" class="footer__link text16">Правовая информация</a>
     </div>

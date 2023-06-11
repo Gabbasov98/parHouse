@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta itemprop="description" name="description" content="">
+    <meta itemprop="keywords" name="keywords" content="">
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/css/fancybox.css">
     <link rel="stylesheet" href="libs/css/swiper-bundle.css">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="libs/css/air-datepicker.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
-    <title>Главная</title>
+    <title itemprop="headline">Главная</title>
 </head>
 
 
@@ -26,6 +26,7 @@
     .wrapper button {
         margin-bottom: 25px;
         width: 300px;
+        max-width: 100%;
         height: 45px;
     }
 </style>
@@ -36,11 +37,14 @@
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
-        <a href="gallery.html" style="display: block; margin-bottom: 20px;">
-            Фотогалерея
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Услуги
         </a>
         <a href="menu.html" style="display: block; margin-bottom: 20px;">
             Меню кухни
+        </a>
+        <a href="product-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка блюда
         </a>
         <a href="certificates.html" style="display: block; margin-bottom: 20px;">
             ПОДАРОЧНЫЕ СЕРТИФИКАТЫ
@@ -51,38 +55,53 @@
         <a href="events.html" style="display: block; margin-bottom: 20px;">
             Мероприятия
         </a>
+        <a href="gallery.html" style="display: block; margin-bottom: 20px;">
+            Фотогалерея
+        </a>
         <a href="contacts.html" style="display: block; margin-bottom: 20px;">
             Контакты
         </a>
-        <a href="services.html" style="display: block; margin-bottom: 20px;">
-            Услуги
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            ОФОРМЛЕНИЕ ЗАКАЗА
         </a>
 
 
 
 
 
-        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
-            Быстрый заказ
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#orderModal">
+            УСПЕШНО ДОБАВЛЕНО В КОРЗИНУ
         </button>
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
+    <div class="modal" id="orderModal" aria-hidden="true">
     <div class="modal-dialog">
         <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.29289" y1="24.2929" x2="24.2929" y2="1.29289" stroke="black" stroke-width="2"/>
+                <line x1="0.707107" y1="1.29289" x2="23.7071" y2="24.2929" stroke="black" stroke-width="2"/>
             </svg>
         </button>
 
+        <div class="modal__title">
+            УСПЕШНО ДОБАВЛЕНо в корзину
+        </div>
 
-
+        <div class="modal__nav">
+            <button class="modal__btn m-btn m-btn-primary">
+                <span>ПРОДОЛЖИТЬ</span>
+            </button>
+        </div>
     </div>
 </div>
 
 
-<!-- <div class="modal-backdrop show"></div> -->
+<!-- <div class="modal-backdrop show"></div>-->
+
     <!--  -->
     <script src="libs/js/jquery.com_jquery-3.6.4.min.js"></script>
 <script src="libs/js/bootstrap.min.js"></script>
